@@ -1,0 +1,139 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    width: 1300px;
+    margin:10px;
+}
+
+header {
+    width: 1100px;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #F7F6F3;
+}
+.h1Header{
+    margin:auto auto;
+    font-size: 35px;
+    font-weight:800;
+    text-align:center;
+}
+#Menu1{
+    margin: 15px;
+    padding:15px;
+    width: 650px;
+    
+}
+#formLogin{
+    width:650px;
+    height: 300px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color:#cad2c5;
+}
+
+#formLogin > h2{
+    text-align:center;
+}
+
+#fLogin {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    padding-left: 45px;
+    margin: auto auto;
+    box-shadow: 0 3px 3px 3px #808080;
+    border:outset  #808080;
+    background-color:#fff;
+    align-items:center;
+}
+
+#btLogar,
+#btEnviar,
+#btLimparDados {
+    padding: 2px;
+    box-shadow: 0 3px 3px 3px #808080;
+    cursor: pointer;
+    border: outset #808080;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1,1em;
+ 
+}
+
+#Content2 {
+    width: 1100px;
+    margin: auto auto;
+    display:flex;
+}
+
+.containerAgenda{
+    display: flex;
+    width:800px;
+    margin: 0 auto;
+    justify-content:space-around;
+    box-shadow: 0 3px 3px 3px #808080;
+    border:outset;
+}
+
+.textoAgenda {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.textoAgenda p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.divAgenda, .divContato{
+    width: 220px;
+    height:240px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.divAgenda img, .divContato img
+{
+    width: 160px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #F7F6F3;
+}
+
+#cadastroClientes {
+    width: 1000px;
+    height: auto;
+    padding: 20px;
+    padding-left: 45px;
+    margin: 20px auto;
+    box-shadow: 0 3px 3px 3px #808080;
+    border: outset #808080;
+    background-color: #fff;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.formulario {
+}
+
+#btEnviar,
+#btLimparDados {
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

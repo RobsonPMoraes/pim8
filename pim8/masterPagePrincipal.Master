@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPagePrincipal.Master.cs" Inherits="pim8.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <title>PIMs.Devs</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="imgHeader">
+                <asp:Image ID="Image1" runat="server" Height="85px" ImageUrl="~/media/download.png" Width="120px" />
+            </div>
+
+            <div class="h1Header"><p>PIMs.Devs Corporation</p></div>
+
+            <nav>
+                <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="1em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="Gray" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/index.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                        <asp:MenuItem Text="Sobre" Value="Sobre"></asp:MenuItem>
+                        <asp:MenuItem Text="Projetos" Value="Projetos"></asp:MenuItem>
+                        <asp:MenuItem Text="Treinamentos" Value="Treinamentos"></asp:MenuItem>
+                        <asp:MenuItem Text="Contato" Value="Contato"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/login.aspx" Text="Sair" Value="Sair"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="Gray" ForeColor="White" Font-Bold="True" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                </asp:Menu>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div> <!-- fim da div container -->
+        </main>
+        <footer>
+            <p> &copy; 2022. Direitos reservados da <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="#" Target="_blank">PIMs.Devs Coorporation</asp:HyperLink></p>
+        </footer>
+    </form>
+</body>
+</html>
